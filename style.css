@@ -38,8 +38,11 @@ body{
 
 
 .degree-section span{
+  position: relative;
+  bottom: -2px;
   margin: 10px;
-  font-size: 30px;
+  font-family: 'Schoolbell',cursive;
+  font-size: 39px;
 }
 
 .degree-section h2{
