@@ -1,50 +1,92 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+.search-box {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 0px;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background: #eeeeee;
+}
+
+.search-btn {
+  color: #e84118;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg,#FFD54F,#EF6C00);
-  font-family: 'Montserrat';
-  color:  white;
+  background: linear-gradient(180deg, #ffd54f, #ef6c00);
+  font-family: "Montserrat";
+  color: white;
 }
 
 .location,
-.temperature{
+.temperature {
   height: 30vh;
   width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
-
-.temperature{
-    flex-direction: column;
+.temperature {
+  flex-direction: column;
 }
 
-.degree-section{
+.degree-section {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-
-.degree-section span{
+.degree-section span {
   position: relative;
   bottom: -2px;
   margin: 10px;
-  font-family: 'Schoolbell',cursive;
+  font-family: "Schoolbell", cursive;
   font-size: 39px;
 }
 
-.degree-section h2{
+.degree-section h2 {
   font-size: 40px;
 }
